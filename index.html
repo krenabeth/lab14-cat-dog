@@ -1,0 +1,36 @@
+<!DOCTYPE>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>How to Choose a Pet</title>
+		<link type="text/css" rel="stylesheet" href="css/styles.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body ng-app="petModule" >
+		<h1>How to Choose a Pet</h1>
+		<ul>
+			<li><a href="#pets/dog">Dog</a></li>
+			<li><a href="#pets/cat">Cat</a></li>
+			<li><a href="#pets/hamster">Hamster</a></li>
+			<li><a href="#pets/anteater">Anteater</a></li>
+		</ul>
+
+		<div ng-view='' id="pretty"></div>
+		<div class="bottom"></div>
+
+<!-- 		<ul ng-controller="bark">
+ 			<li ng-repeat='bark in barkArray' class="ng-class : {{barking.style}}">{{barking.text}}</li>
+        </ul> -->
+
+
+
+   		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js" type="text/javascript"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+		<script src="script.js"></script>
+		<script src="petController.js"></script>
+
+	</body>
+
+</html>
